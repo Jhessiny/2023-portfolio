@@ -1,4 +1,3 @@
-import RootLayout from "./layout";
 import {
   IntroductionSection,
   ProjectsSection,

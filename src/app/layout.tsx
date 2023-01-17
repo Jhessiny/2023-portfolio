@@ -1,4 +1,5 @@
 import { Footer } from "../app/components/footer/footer";
+import "./globals.css";
 
 export default function RootLayout({
   children,
