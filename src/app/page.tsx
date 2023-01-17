@@ -1,4 +1,4 @@
-import RootLayout from "../pages/layout";
+import RootLayout from "./layout";
 import {
   IntroductionSection,
   ProjectsSection,
@@ -8,13 +8,11 @@ import {
 
 export default function Home() {
   return (
-    <RootLayout>
-      <main>
-        <IntroductionSection />
-        <ProjectsSection />
-        <SkillsAndResumeSection />
-        <SocialMediaAndLinksSection />
-      </main>
-    </RootLayout>
+    <main>
+      <IntroductionSection />
+      <ProjectsSection />
+      <SkillsAndResumeSection />
+      <SocialMediaAndLinksSection />
+    </main>
   );
 }
