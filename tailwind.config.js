@@ -15,7 +15,7 @@ module.exports = {
       },
       width: {},
       colors: {
-        primary: { main: "#e491ae", dark: "#a91980", light: "#e8dbe2" },
+        primary: { main: "#e491ae", dark: "#D06187", light: "#e8dbe2" },
         secondary: { main: "#799166", dark: "#0d3725", light: "#c2c99f" },
         backdrop: "rgba(0,0,0,0.30)",
         tertiary: "#0d3725",
@@ -29,6 +29,7 @@ module.exports = {
       "re-appear": "appear 2s",
       appearSlideRight: "appearSlideToRight 2.5s",
       appearSlideToLeft: "appearSlideToLeft 2.5s",
+      appearSlideToTop: "appearSlideToTop 1.5s",
     },
     keyframes: {
       quickBounce: {
@@ -63,6 +64,17 @@ module.exports = {
         "0%, 67%": {
           opacity: "0",
           transform: "translateX(30%)",
+        },
+
+        "100%": {
+          opacity: "1",
+          transform: "translateX(0)",
+        },
+      },
+      appearSlideToTop: {
+        "0%, 67%": {
+          opacity: "0",
+          transform: "translateY(40%)",
         },
 
         "100%": {
