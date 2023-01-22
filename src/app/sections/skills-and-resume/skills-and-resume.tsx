@@ -1,5 +1,13 @@
 import React from "react";
+import { ResumeButton, SkillsIcons } from "./components";
 
 export const SkillsAndResumeSection = () => {
-  return <div>SkillsAndResumeSection</div>;
+  return (
+    <>
+      <SkillsIcons />
+      <div className="py-24 flex justify-center items-center">
+        <ResumeButton />
+      </div>
+    </>
+  );
 };
