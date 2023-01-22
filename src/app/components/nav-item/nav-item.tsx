@@ -4,10 +4,11 @@ type Props = {
   href: string;
   text: string;
   highlight?: boolean;
+  light?: boolean;
 };
 
-export const NavItem = ({ href, text, highlight }: Props) => {
-  const textColor = highlight ? `"text-text-dark` : "text-text-dark";
+export const NavItem = ({ href, text, highlight, light }: Props) => {
+  const textColor = light ? `"text-primary-light` : "text-text-dark";
   const border = highlight ? "border-solid border-2 border-secondary-dark" : "";
   return (
     <li>

@@ -14,7 +14,6 @@ export const Header = () => {
         <NavItem href="/" text="Experience" />
         <NavItem href="/" text="Portfolio" />
         <NavItem href="/" text="Resume" />
-        <NavItem href="/" text="Contact" />
         <NavItem href="/" text="Blog" highlight />
         <RxDotFilled color="#42404b" className="ml-5" />
       </ul>
