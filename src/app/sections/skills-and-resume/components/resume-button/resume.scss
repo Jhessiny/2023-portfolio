@@ -1,0 +1,41 @@
+$theme: #e491ae;
+$loader-size: 150px;
+$speed: 1.5s;
+
+.particle {
+  position: absolute;
+  background-color: $theme;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 50%;
+  margin-left: -15px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: scale(0);
+  visibility: hidden;
+
+  &:nth-of-type(odd) {
+    border: solid 2px $theme;
+    background-color: transparent;
+  }
+
+  @for $i from 1 through 35 {
+    @keyframes particles-#{$i} {
+      from {
+        transform: scale(1);
+        visibility: visible;
+      }
+      to {
+        left: random(500) - 250 + 0px;
+        top: random(500) - 250 + 0px;
+        transform: scale(0);
+        visibility: hidden;
+      }
+    }
+
+    .active &:nth-of-type(#{$i}) {
+      animation: particles-#{$i} $speed ($i / 40) + 0s;
+    }
+  }
+}
