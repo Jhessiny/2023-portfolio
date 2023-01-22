@@ -2,10 +2,11 @@ import { Container } from "@/app/components";
 import React, { useCallback, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { ExperienceItem } from "./components";
+import { experiences } from "./constants";
 
 export const WorkExperienceSection = () => {
   const observer = useRef<IntersectionObserver>();
-  const [animation, setAnimation] = useState<string>("");
+  const [animation, setAnimation] = useState<string>("opacity-0");
   const sectionRef = useCallback((node: any) => {
     if (observer.current) observer.current.disconnect();
     observer.current = new IntersectionObserver(
@@ -21,7 +22,7 @@ export const WorkExperienceSection = () => {
   }, []);
 
   return (
-    <div className="py-60">
+    <div className="py-40">
       <Container>
         <div
           className={twMerge("flex justify-between items-center", animation)}
@@ -40,30 +41,10 @@ export const WorkExperienceSection = () => {
             </h3>
           </div>
           <div className="grid grid-cols-2 gap-6">
-            <ExperienceItem
-              title="Frontend Developer"
-              company="SOFTO"
-              date="2022 - current"
-              description="Development of projects features, creating components and testing using React, Typescript, Redux, Clean Architecture, Jest, testing-library"
-            />
-            <ExperienceItem
-              title="Frontend Developer"
-              company="SOFTO"
-              date="2022 - current"
-              description="Development of projects features, creating components and testing using React, Typescript, Redux, Clean Architecture, Jest, testing-library"
-            />
-            <ExperienceItem
-              title="Frontend Developer"
-              company="SOFTO"
-              date="2022 - current"
-              description="Development of projects features, creating components and testing using React, Typescript, Redux, Clean Architecture, Jest, testing-library"
-            />
-            <ExperienceItem
-              title="Frontend Developer"
-              company="SOFTO"
-              date="2022 - current"
-              description="Development of projects features, creating components and testing using React, Typescript, Redux, Clean Architecture, Jest, testing-library"
-            />
+            <ExperienceItem {...experiences[0]} />
+            <ExperienceItem {...experiences[1]} />
+            <ExperienceItem {...experiences[2]} />
+            <ExperienceItem {...experiences[3]} />
           </div>
         </div>
       </Container>

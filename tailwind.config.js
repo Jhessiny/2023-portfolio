@@ -17,7 +17,7 @@ module.exports = {
       colors: {
         primary: { main: "#e491ae", dark: "#D06187", light: "#e8dbe2" },
         secondary: { main: "#799166", dark: "#0d3725", light: "#c2c99f" },
-        backdrop: "rgba(0,0,0,0.30)",
+        backdrop: "rgba(0,0,0,0.15)",
         tertiary: "#0d3725",
         text: {
           dark: "#42404b",
@@ -29,7 +29,7 @@ module.exports = {
       "re-appear": "appear 2s",
       appearSlideRight: "appearSlideToRight 2.5s",
       appearSlideToLeft: "appearSlideToLeft 2.5s",
-      appearSlideToTop: "appearSlideToTop 1.5s",
+      appearSlideToTop: "appearSlideToTop 1s",
     },
     keyframes: {
       quickBounce: {
