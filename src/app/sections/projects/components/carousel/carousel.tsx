@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { RxArrowLeft, RxArrowRight } from "react-icons/rx";
 
-import "swiper/css";
-
 import { ProjectItem } from "../";
 
 import { projectsList } from "../../constants";

@@ -1,7 +1,6 @@
 import { Container, Divider } from "@/app/components";
 import React from "react";
 
-import "swiper/css";
 import { Carousel } from "./components/carousel/carousel";
 
 export const ProjectsSection = () => {
