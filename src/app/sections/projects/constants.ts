@@ -4,7 +4,7 @@ export const projectsList: ProjectModel[] = [
   {
     title: "project1",
     description:
-      "Ecommerce project with products list and item pages, infinite scroll, cart, checkout",
+      "Ecommerce project with products list and item pages, infinite scroll, cart, checkout, login with Google",
     technologies: "Next.js, Typescript, Tailwindcss, Zustand, Axios",
     img: "/assets/ecommerce2.png",
   },
