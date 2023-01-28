@@ -9,12 +9,9 @@ import { twMerge } from "tailwind-merge";
 export const Carousel = () => {
   const [active, setActive] = useState(0);
   const handleNext = () => {
-    console.log("oi");
     setActive((prev) => {
-      console.log({ prev });
       const newValue = prev + 1;
       if (newValue >= projectsList.length) return 0;
-      console.log({ newValue });
       return newValue;
     });
   };
@@ -42,7 +39,7 @@ export const Carousel = () => {
         </div>
         <div>
           <div
-            className={`flex gap-4 -translate-x-[${translateList}px] duration-300`}
+            className={`flex gap-4 duration-300 -translate-x-[${translateList}px]`}
           >
             {projectsList.map((item, index) => (
               <ProjectItem
