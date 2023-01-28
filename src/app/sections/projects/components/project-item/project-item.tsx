@@ -2,6 +2,7 @@ import { Card } from "@/app/components";
 import { ProjectModel } from "@/app/models/project-model";
 import Image from "next/image";
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 type Props = ProjectModel & {
   index: number;
@@ -21,7 +22,11 @@ export const ProjectItem = ({
 
   return (
     <Card
-      className={`backdrop-blur-md min-h-[200px] w-[420px] bg-opacity-40 relative p-10 pt-20 ${activeClasses} ${hideClass}`}
+      className={twMerge(
+        "backdrop-blur-md min-h-[200px] w-[420px] bg-opacity-40 relative p-10 pt-20",
+        activeClasses,
+        hideClass
+      )}
     >
       <Image
         src={img}
