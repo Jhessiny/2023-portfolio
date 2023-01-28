@@ -30,3 +30,10 @@ export const projectsList: ProjectModel[] = [
     img: "/assets/ecommerce2.png",
   },
 ];
+
+export const translateList: Record<number, string> = {
+  0: "-translate-x-[0px]",
+  1: "-translate-x-[452px]",
+  2: "-translate-x-[904px]",
+  3: "-translate-x-[1356px]",
+};

@@ -3,7 +3,7 @@ import { RxArrowLeft, RxArrowRight } from "react-icons/rx";
 
 import { ProjectItem } from "../";
 
-import { projectsList } from "../../constants";
+import { projectsList, translateList } from "../../constants";
 import { twMerge } from "tailwind-merge";
 
 export const Carousel = () => {
@@ -24,14 +24,12 @@ export const Carousel = () => {
     });
   };
 
-  const translateList = active * 436;
-
   return (
     <>
       <div className="flex overflow-x-hidden pt-20">
         <div className="flex items-end">
           <h2
-            className="font-bold text-text-dark text-5xl uppercase transform rotate-180 inline-block mr-4"
+            className="font-bold text-text-dark text-5xl uppercase transform rotate-180 inline-block mr-6 z-20"
             style={{ writingMode: "vertical-rl" }}
           >
             Projects
@@ -39,7 +37,10 @@ export const Carousel = () => {
         </div>
         <div>
           <div
-            className={`flex gap-4 duration-300 -translate-x-[${translateList}px]`}
+            className={twMerge(
+              `flex gap-8 duration-500 relative`,
+              translateList[active]
+            )}
           >
             {projectsList.map((item, index) => (
               <ProjectItem

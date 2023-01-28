@@ -17,13 +17,16 @@ export const ProjectItem = ({
   index,
   active,
 }: Props) => {
-  // const activeClasses = active === index ? "-translate-y-5 scale-105" : "";
-  // const hideClass = active > index ? "opacity-0" : "";
+  const activeClasses =
+    active === index ? "-translate-y-5 scale-105 bg-opacity-60" : "";
+  const hideClass = active > index ? "opacity-0" : "";
 
   return (
     <Card
       className={twMerge(
-        "backdrop-blur-md min-h-[200px] w-[420px] bg-opacity-40 relative p-10 pt-20"
+        "backdrop-blur-md min-h-[200px] w-[420px] bg-opacity-40 relative p-10 pt-20 duration-300 z-10",
+        activeClasses,
+        hideClass
       )}
     >
       <Image
