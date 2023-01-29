@@ -59,11 +59,14 @@ export const Carousel = () => {
           <RxArrowRight size={24} onClick={handleNext} />
         </div>
         <div className="h-14 flex justify-between items-end w-14">
-          {projectsList.map((item, index) => (
+          {projectsList.map((_, index) => (
             <div
+              onClick={() => setActive(index)}
               key={index}
               className={twMerge(
-                `w-1 h-3 bg-primary-dark ${index === active ? "h-10" : ""}`
+                `w-1 h-3 bg-primary-dark duration-300 rounded-t-sm cursor-pointer ${
+                  index === active ? "h-10" : ""
+                }`
               )}
             ></div>
           ))}
