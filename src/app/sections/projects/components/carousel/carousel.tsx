@@ -53,11 +53,19 @@ export const Carousel = () => {
           </div>
         </div>
       </div>
-      <div className="absolute -bottom-28 left-20">
-        <div className="">
-          <RxArrowLeft size={24} onClick={handlePrev} />
-          <RxArrowRight size={24} onClick={handleNext} />
-        </div>
+      <div className="absolute -bottom-28 left-[4.3rem]">
+        <RxArrowLeft
+          size={24}
+          onClick={handlePrev}
+          className={`${
+            active === 0 ? "opacity-40 cursor-default" : "cursor-pointer"
+          }`}
+        />
+        <RxArrowRight
+          size={24}
+          onClick={handleNext}
+          className="cursor-pointer"
+        />
         <div className="h-14 flex justify-between items-end w-14">
           {projectsList.map((_, index) => (
             <div
