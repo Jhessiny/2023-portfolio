@@ -26,10 +26,10 @@ export const Carousel = () => {
 
   return (
     <>
-      <div className="flex overflow-x-hidden pt-20">
+      <div className="flex overflow-x-hidden px-2 md:px-0 pt-20">
         <div className="flex items-end">
           <h2
-            className="font-bold text-text-dark text-5xl uppercase transform rotate-180 inline-block mr-6 z-20"
+            className="font-bold text-text-dark text-5xl uppercase transform rotate-180 inline-block mr-6 z-20 hidden sm:block"
             style={{ writingMode: "vertical-rl" }}
           >
             Projects

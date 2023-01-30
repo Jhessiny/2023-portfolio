@@ -21,25 +21,28 @@ export const WorkExperienceSection = () => {
   }, []);
 
   return (
-    <div className="py-40">
+    <div className="py-28 md:py-40 px-4">
       <Container>
         <div
-          className={twMerge("flex justify-between items-center", animation)}
+          className={twMerge(
+            "grid grid-cols-1 md:grid-cols-experiencesMd lg:grid-cols-experiencesLg justify-between items-center",
+            animation
+          )}
           ref={sectionRef}
         >
           <div>
-            <h3 className="text-primary-main font-bold text-3xl uppercase leading-7">
+            <h3 className="text-primary-main font-bold text-5xl leading-none mb-6 md:mb-0 md:text-3xl uppercase md:leading-7">
               <span className="block">My</span>
               <span className="block">Work</span>
               <span className="block">Experience</span>
             </h3>
-            <h3 className="text-primary-main font-bold text-3xl uppercase leading-7 opacity-20">
+            <h3 className="text-primary-main font-bold text-3xl uppercase leading-7 opacity-20 hidden md:block">
               <span className="block">Experience</span>
               <span className="block">Work</span>
               <span className="block">My</span>
             </h3>
           </div>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <ExperienceItem {...experiences[0]} />
             <ExperienceItem {...experiences[1]} />
             <ExperienceItem {...experiences[2]} />

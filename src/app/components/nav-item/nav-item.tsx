@@ -13,7 +13,7 @@ export const NavItem = ({ href, text, highlight, light }: Props) => {
   return (
     <li>
       <a
-        className={`${textColor} ${border} font-bold text-xs py-2 px-4 uppercase inline-block leading-3`}
+        className={`${textColor} ${border} font-bold text-xs py-2 px-2 lg:px-4 uppercase inline-block leading-3`}
         href={href}
       >
         {text}

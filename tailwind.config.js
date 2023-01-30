@@ -23,6 +23,10 @@ module.exports = {
           dark: "#42404b",
         },
       },
+      gridTemplateColumns: {
+        experiencesLg: "18rem 1fr",
+        experiencesMd: "13rem 1fr",
+      },
     },
     animation: {
       "bounce-finite": "quickBounce 1.5s cubic-bezier(0,2.01,.71,.42)",

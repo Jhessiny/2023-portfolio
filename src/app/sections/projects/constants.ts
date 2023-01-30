@@ -2,25 +2,31 @@ import { ProjectModel } from "@/app/models/project-model";
 
 export const projectsList: ProjectModel[] = [
   {
-    title: "project1",
+    title: "Online Shopping Cart",
     description:
-      "Ecommerce project with products list and item pages, infinite scroll, cart, checkout, login with Google",
-    technologies: "Next.js, Typescript, Tailwindcss, Zustand, Axios",
+      "E-commerce website with products list and item pages, infinite scroll, interactive shopping cart, checkout, login with Google.",
+    technologies: "Next.js, Typescript, Tailwindcss, Zustand, Axios, Next-Auth",
     img: "/assets/ecommerce2.png",
+    githubRepo: "https://github.com/Jhessiny/next-eccomerce",
+    deployLink: "https://next-eccomerce-gules.vercel.app/products",
   },
   {
-    title: "project2",
+    title: "Quiz Dash",
     description:
-      "Ecommerce project with products list and item pages, infinite scroll, cart, checkout",
-    technologies: "Next.js, Typescript, Tailwindcss, Zustand, Axios",
+      "Dashboard to manage quizzes and contacts. The admin can create quizzes to gather leads and send it to platforms like Active Campaign.",
+    technologies: "React.js, Typescript, TSS, Axios",
     img: "/assets/ecommerce2.png",
+    githubRepo: "/",
+    deployLink: "/",
   },
   {
-    title: "project3",
+    title: "Fernandes Coutinho Advogados",
     description:
-      "Ecommerce project with products list and item pages, infinite scroll, cart, checkout",
-    technologies: "Next.js, Typescript, Tailwindcss, Zustand, Axios",
+      "Landing page to present lawyer services and receive contacts.",
+    technologies: "Html, Sass, Javascript",
     img: "/assets/ecommerce2.png",
+    githubRepo: "/",
+    deployLink: "/",
   },
   {
     title: "project4",
@@ -28,6 +34,8 @@ export const projectsList: ProjectModel[] = [
       "Ecommerce project with products list and item pages, infinite scroll, cart, checkout",
     technologies: "Next.js, Typescript, Tailwindcss, Zustand, Axios",
     img: "/assets/ecommerce2.png",
+    githubRepo: "/",
+    deployLink: "/",
   },
 ];
 

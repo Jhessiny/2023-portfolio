@@ -3,4 +3,6 @@ export type ProjectModel = {
   description: string;
   img: string;
   technologies: string;
+  githubRepo: string;
+  deployLink: string;
 };
