@@ -29,7 +29,7 @@ export const Footer = () => {
           />
         </a>
       </div>
-      <ul className="flex items-center justify-center text-primary-light mt-6">
+      <ul className="block text-center sm:flex items-center justify-center text-primary-light mt-6">
         <NavItem href="/" text="Home" light />
         <NavItem href="/" text="Experience" light />
         <NavItem href="/" text="Portfolio" light />
