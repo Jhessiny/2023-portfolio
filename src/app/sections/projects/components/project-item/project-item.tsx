@@ -36,7 +36,7 @@ export const ProjectItem = ({
   return (
     <Card
       className={twMerge(
-        "backdrop-blur-md min-h-[25rem] sm:min-h-[25rem] md:min-h-full bg-opacity-40 relative px-5 md:px-10 pt-20 pb-10 duration-300 z-10 flex flex-col justify-between",
+        "backdrop-blur-md min-h-[25rem] sm:min-h-[25rem] md:min-h-full bg-opacity-40 relative px-5 md:px-10 pt-16 pb-10 duration-300 z-10 flex flex-col justify-between",
         activeClasses,
         hideClass,
         widthClass
@@ -47,7 +47,7 @@ export const ProjectItem = ({
         width={600}
         height={600}
         alt={title}
-        className="object-cover w-32 h-24 absolute top-0 translate-y-[-50%] rounded-sm"
+        className="object-cover w-[10rem] h-[6rem] absolute top-0 translate-y-[-50%] rounded-sm"
       />
       <p className="font-bold uppercase text-sm">{title}</p>
       <p className="mt-2">{description}</p>
