@@ -10,9 +10,11 @@ export const ResumeButton = () => {
     }, 2000);
   };
 
-  const particles = new Array(35).map((item, index) => (
-    <span key={Math.random() * index} className="particle"></span>
-  ));
+  const particles = new Array(35)
+    .fill("")
+    .map((item, index) => (
+      <span key={Math.random() * index} className="particle"></span>
+    ));
 
   return (
     <div className={`${isActive ? "active" : ""} relative`}>
