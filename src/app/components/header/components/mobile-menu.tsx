@@ -28,11 +28,15 @@ export const MobileMenu = ({ isScrolled }: { isScrolled: boolean }) => {
             color="black"
           />
           <ul className="items-center flex flex-col justify-center h-full gap-10">
-            <NavItem href="/" text="Home" className="text-3xl" />
-            <NavItem href="/" text="Experience" className="text-3xl" />
-            <NavItem href="/" text="Portfolio" className="text-3xl" />
-            <NavItem href="/" text="Resume" className="text-3xl" />
-            <NavItem href="/" text="Blog" highlight className="text-3xl" />
+            <NavItem href="#home" text="Home" className="text-3xl" />
+            <NavItem
+              href="#experience"
+              text="Experience"
+              className="text-3xl"
+            />
+            <NavItem href="#projects" text="Portfolio" className="text-3xl" />
+            <NavItem href="#resume" text="Resume" className="text-3xl" />
+            <NavItem href="/blog" text="Blog" highlight className="text-3xl" />
           </ul>
         </div>
       )}

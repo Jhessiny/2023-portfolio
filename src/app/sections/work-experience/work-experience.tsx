@@ -21,7 +21,7 @@ export const WorkExperienceSection = () => {
   }, []);
 
   return (
-    <div className="py-28 md:py-40 px-4">
+    <div className="py-28 md:py-40 px-4" id="experience">
       <Container>
         <div
           className={twMerge(

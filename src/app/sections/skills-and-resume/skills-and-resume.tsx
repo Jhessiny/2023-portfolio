@@ -5,7 +5,7 @@ export const SkillsAndResumeSection = () => {
   return (
     <>
       <SkillsIcons />
-      <div className="py-24 flex justify-center items-center">
+      <div className="py-24 flex justify-center items-center" id="resume">
         <ResumeButton />
       </div>
     </>

@@ -6,7 +6,10 @@ export const IntroductionSection = () => {
   return (
     <>
       <Header />
-      <div className="h-[90vh] md:h-[900px] bg-tertiary bg-img bg-[url('/assets/avatar.png')] bg-no-repeat bg-center bg-cover md:bg-contain relative overflow-hidden">
+      <div
+        className="h-[90vh] md:h-[900px] bg-tertiary bg-img bg-[url('/assets/avatar.png')] bg-no-repeat bg-center bg-cover md:bg-contain relative overflow-hidden"
+        id="home"
+      >
         <div className="h-full w-full md:w-[50.5%] bg-primary-light opacity-95 md:opacity-80 md:animate-bounce-finite md:translate-x-[100%] absolute top-0">
           <div className="h-full flex flex-col items-center justify-center ">
             <div>
