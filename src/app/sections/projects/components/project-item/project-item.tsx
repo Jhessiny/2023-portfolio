@@ -25,11 +25,12 @@ export const ProjectItem = ({
   githubRepo,
 }: Props) => {
   const activeClasses =
-    active && active === index
+    typeof active === "number" && active === index
       ? "md:-translate-y-5 md:scale-105 bg-opacity-60"
       : "";
 
-  const hideClass = active && active > index ? "opacity-0" : "";
+  const hideClass =
+    typeof active === "number" && active > index ? "opacity-0" : "";
 
   const widthClass = isMobile ? "w-full" : "w-[26.25rem]";
 
