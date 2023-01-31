@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 
 import { twMerge } from "tailwind-merge";
@@ -10,8 +11,8 @@ export const Header = () => {
     else setIsScrolled(false);
   };
   useEffect(() => {
-    window?.addEventListener("scroll", checkScroll);
-    return window?.removeEventListener("scroll", checkScroll);
+    window.addEventListener("scroll", checkScroll);
+    return () => window.removeEventListener("scroll", checkScroll);
   }, []);
 
   const bgScrolledClasses = isScrolled
@@ -23,7 +24,7 @@ export const Header = () => {
   return (
     <div
       className={twMerge(
-        `absolute w-full z-10 translate-x-[-50%] left-[50%] duration-300 `,
+        `absolute w-full z-10 translate-x-[-50%] left-[50%] duration-300`,
         bgScrolledClasses
       )}
     >
@@ -40,7 +41,7 @@ export const Header = () => {
         </h1>
 
         <DefaultMenu isScrolled={isScrolled} />
-        <MobileMenu />
+        <MobileMenu isScrolled={isScrolled} />
       </nav>
     </div>
   );
