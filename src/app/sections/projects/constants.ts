@@ -16,7 +16,7 @@ export const projectsList: ProjectModel[] = [
     description:
       "Dashboard to manage quizzes and contacts. The admin can create quizzes to gather leads and send it to platforms like Active Campaign.",
     technologies: "React.js, Typescript, TSS, Axios",
-    img: "/assets/ecommerce.png",
+    img: "/assets/dashboard.png",
     githubRepo: "https://github.com/Jhessiny/quiz-dash",
     deployLink:
       "http://quiz-dash-test.s3-website-us-east-1.amazonaws.com/admin",
@@ -26,7 +26,7 @@ export const projectsList: ProjectModel[] = [
     description:
       "Landing page to present lawyer services and receive contacts.",
     technologies: "Html, css, Javascript",
-    img: "/assets/ecommerce.png",
+    img: "/assets/fernandes-neto.png",
     githubRepo:
       "https://github.com/Jhessiny/jhessiny.github.io/tree/master/FernandesNeto2",
     deployLink: "https://jhessiny.github.io/FernandesNeto2/",
@@ -35,7 +35,7 @@ export const projectsList: ProjectModel[] = [
     title: "Kraftsoft",
     description: "Landing page for digital agency",
     technologies: "Next.js, Typescript, Tailwindcss, Zustand, Axios",
-    img: "/assets/ecommerce.png",
+    img: "/assets/kraftsoft.png",
     githubRepo: "https://github.com/Jhessiny/kraftsoft-digital-agency",
     deployLink: "https://jhessiny.github.io/kraftsoft-digital-agency/",
   },
