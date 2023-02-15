@@ -1,6 +1,5 @@
 import "../app/global.css";
 import { IoMdConstruct } from "react-icons/io";
-import Link from "next/link";
 
 export default function About() {
   return (
