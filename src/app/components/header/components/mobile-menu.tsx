@@ -24,19 +24,40 @@ export const MobileMenu = ({ isScrolled }: { isScrolled: boolean }) => {
           <IoMdClose
             size={40}
             className="absolute top-2 right-2 cursor-pointer z-10"
-            onClick={() => setIsOpen(false)}
             color="black"
           />
           <ul className="items-center flex flex-col justify-center h-full gap-10">
-            <NavItem href="#home" text="Home" className="text-3xl" />
+            <NavItem
+              href="#home"
+              text="Home"
+              className="text-3xl"
+              onClick={() => setIsOpen(false)}
+            />
             <NavItem
               href="#experience"
               text="Experience"
               className="text-3xl"
+              onClick={() => setIsOpen(false)}
             />
-            <NavItem href="#projects" text="Portfolio" className="text-3xl" />
-            <NavItem href="#resume" text="Resume" className="text-3xl" />
-            <NavItem href="/blog" text="Blog" highlight className="text-3xl" />
+            <NavItem
+              href="#projects"
+              text="Portfolio"
+              className="text-3xl"
+              onClick={() => setIsOpen(false)}
+            />
+            <NavItem
+              href="#resume"
+              text="Resume"
+              className="text-3xl"
+              onClick={() => setIsOpen(false)}
+            />
+            <NavItem
+              href="/blog"
+              text="Blog"
+              highlight
+              className="text-3xl"
+              onClick={() => setIsOpen(false)}
+            />
           </ul>
         </div>
       )}
