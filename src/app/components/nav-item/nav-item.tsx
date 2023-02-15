@@ -7,7 +7,7 @@ type Props = {
   highlight?: boolean;
   light?: boolean;
   className?: string;
-  onClick: (params?: unknown) => void;
+  onClick?: (params?: unknown) => void;
 };
 
 export const NavItem = ({
