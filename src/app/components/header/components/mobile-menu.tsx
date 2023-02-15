@@ -25,6 +25,7 @@ export const MobileMenu = ({ isScrolled }: { isScrolled: boolean }) => {
             size={40}
             className="absolute top-2 right-2 cursor-pointer z-10"
             color="black"
+            onClick={() => setIsOpen(false)}
           />
           <ul className="items-center flex flex-col justify-center h-full gap-10">
             <NavItem
